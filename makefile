@@ -9,13 +9,13 @@ all: forests
 forests: forests.o task.o bst.o 
 	$(CC) $(LDFLAGS) -o $@ $^
 
-bst.o: bst.c bst.h
+bst.o: ./src/bst.c ./src/bst.h
 	$(CC) $(CFLAGS) -c $<
 	
-task.o: task.c task.h bst.h
+task.o: ./src/task.c ./src/task.h ./src/bst.h
 	$(CC) $(CFLAGS) -c $<
 
-forests.o: forests.c bst.h task.h
+forests.o: ./src/forests.c ./src/bst.h ./src/task.h
 	$(CC) $(CFLAGS) -c $<
 
 clean:
