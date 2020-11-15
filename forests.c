@@ -8,7 +8,7 @@
 #include "task.h"
 
 
-int main(void){
+int main(void) {
    /// root - Root of the BST tree, wchich will keep all data information received
    ///        from input file.
    /// N - Estimated size of the input line. 
@@ -21,16 +21,16 @@ int main(void){
    char *inputLine = NULL;
    int readSize; 
    
-   while ((readSize = getline (&inputLine, &N, stdin)) != -1){
-	  // Check if memory is available. 
-	  memoryCheckString(inputLine);
-	    
+   while ((readSize = getline (&inputLine, &N, stdin)) != -1) {
+    // Check if memory is available. 
+    memoryCheckString(inputLine);
+      
       // If input line is not a comment start processing input line. 
       if (inputLine[0] != '#'){
          processInputLine (inputLine, &root, readSize); 
       }
       
-      free (inputLine); 
+      free(inputLine); 
       inputLine = NULL; 
    }
    // Clean all data. 

@@ -12,9 +12,9 @@
 #define MAX_SIZE 4
 
 /// This function processing input line. 
-void processInputLine (char *inputLine, Tree *root, int readSize);
+void processInputLine(char *inputLine, Tree *root, int readSize);
 
 /// Function returns 1 if given parameter is white space. 
-int checkWhiteSpace (char inputChar);
+int checkWhiteSpace(char inputChar);
 
 #endif // TASK_H
