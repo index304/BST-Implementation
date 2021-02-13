@@ -1,3 +1,3 @@
-# male_zadanie
+# Binary Search Tree Implementation
 
-Implementation of simple C program wchich use bst to store informations.
+Implementation of BST in C and use of designed tree in specific task.
